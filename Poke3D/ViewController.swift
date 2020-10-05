@@ -31,7 +31,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Create a session configuration
         let configuration = ARImageTrackingConfiguration()
         
-        if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "Magic Cards", bundle: Bundle.main) {
+        if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "Pokemon Cards", bundle: Bundle.main) {
 
             configuration.trackingImages = imageToTrack
             
@@ -63,12 +63,24 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             plane.firstMaterial?.diffuse.contents = UIColor(white: 1.0, alpha: 0.5)
             
+            
             let planeNode = SCNNode(geometry: plane)
             
             planeNode.eulerAngles.x = -.pi/2
             
             node.addChildNode(planeNode)
             
+            if let pokeScene = SCNScene(named: "art.scnassets/eevee.scn") {
+
+                if let pokeNode = pokeScene.rootNode.childNodes.first {
+
+                    planeNode.addChildNode(pokeNode)
+
+                }
+
+            } else {
+                print("eevee scene creation failed")
+            }
             
         }
         

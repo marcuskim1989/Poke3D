@@ -11,8 +11,8 @@
 		2CD9898C252A8C8800EC5C27 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD9898B252A8C8800EC5C27 /* art.scnassets */; };
 		2CD9898E252A8C8800EC5C27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD9898D252A8C8800EC5C27 /* ViewController.swift */; };
 		2CD98991252A8C8800EC5C27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD9898F252A8C8800EC5C27 /* Main.storyboard */; };
-		2CD98993252A8C8900EC5C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD98992252A8C8900EC5C27 /* Assets.xcassets */; };
 		2CD98996252A8C8900EC5C27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD98994252A8C8900EC5C27 /* LaunchScreen.storyboard */; };
+		2CD989A0252A99F000EC5C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD9899F252A99F000EC5C27 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +21,9 @@
 		2CD9898B252A8C8800EC5C27 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		2CD9898D252A8C8800EC5C27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CD98990252A8C8800EC5C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2CD98992252A8C8900EC5C27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CD98995252A8C8900EC5C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CD98997252A8C8900EC5C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CD9899F252A99F000EC5C27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +57,10 @@
 			isa = PBXGroup;
 			children = (
 				2CD98989252A8C8800EC5C27 /* AppDelegate.swift */,
-				2CD9898B252A8C8800EC5C27 /* art.scnassets */,
 				2CD9898D252A8C8800EC5C27 /* ViewController.swift */,
+				2CD9898B252A8C8800EC5C27 /* art.scnassets */,
+				2CD9899F252A99F000EC5C27 /* Assets.xcassets */,
 				2CD9898F252A8C8800EC5C27 /* Main.storyboard */,
-				2CD98992252A8C8900EC5C27 /* Assets.xcassets */,
 				2CD98994252A8C8900EC5C27 /* LaunchScreen.storyboard */,
 				2CD98997252A8C8900EC5C27 /* Info.plist */,
 			);
@@ -126,7 +126,7 @@
 			files = (
 				2CD9898C252A8C8800EC5C27 /* art.scnassets in Resources */,
 				2CD98996252A8C8900EC5C27 /* LaunchScreen.storyboard in Resources */,
-				2CD98993252A8C8900EC5C27 /* Assets.xcassets in Resources */,
+				2CD989A0252A99F000EC5C27 /* Assets.xcassets in Resources */,
 				2CD98991252A8C8800EC5C27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
