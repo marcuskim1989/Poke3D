@@ -22,6 +22,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
+        sceneView.autoenablesDefaultLighting = true
+        
 
     }
     
@@ -35,7 +37,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
             configuration.trackingImages = imageToTrack
             
-            configuration.maximumNumberOfTrackedImages = 1
+            configuration.maximumNumberOfTrackedImages = 2
             
             print("Images successfully added")
             
@@ -59,6 +61,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
      
         if let imageAnchor = anchor as? ARImageAnchor {
             
+            
             let plane = SCNPlane(width: imageAnchor.referenceImage.physicalSize.width, height: imageAnchor.referenceImage.physicalSize.height)
             
             plane.firstMaterial?.diffuse.contents = UIColor(white: 1.0, alpha: 0.5)
@@ -70,16 +73,32 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             node.addChildNode(planeNode)
             
+            if imageAnchor.referenceImage.name == "Eevee-Card" {
+            
             if let pokeScene = SCNScene(named: "art.scnassets/eevee.scn") {
 
                 if let pokeNode = pokeScene.rootNode.childNodes.first {
 
+                    
+                    
                     planeNode.addChildNode(pokeNode)
 
                 }
+            }
+            }
+            
+            if imageAnchor.referenceImage.name == "Oddish-Card" {
+            
+            if let pokeScene = SCNScene(named: "art.scnassets/oddish.scn") {
 
-            } else {
-                print("eevee scene creation failed")
+                if let pokeNode = pokeScene.rootNode.childNodes.first {
+
+                    pokeNode.eulerAngles.x = .pi/2
+                    
+                    planeNode.addChildNode(pokeNode)
+
+                }
+            }
             }
             
         }
